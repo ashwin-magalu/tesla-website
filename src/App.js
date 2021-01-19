@@ -1,23 +1,98 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Item from "./components/Item";
+import Accessories from "./assets/Desktop-Accessories.jpg";
+import ModelS from "./assets/Desktop-ModelS.jpeg";
+import Model3 from "./assets/Desktop-Model3.jpeg";
+import ModelX from "./assets/Desktop-ModelX.jpeg";
+import ModelY from "./assets/Desktop-ModelY.jpeg";
+import SolarRoof from "./assets/Desktop-SolarRoof.jpeg";
+import SolarPanels from "./assets/Desktop-SolarPanels.jpeg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <div className="app__itemsContainer">
+        <Item
+          title="Lowest Cost Solar Panels in America"
+          desc="Money-back guarantee"
+          desClick=""
+          backgroundImage={SolarPanels}
+          leftBtnTxt="ORDER NOW"
+          leftBtnLink=""
+          rightBtnTxt="LEARN MORE"
+          rightBtnLink=""
+          twoButtons="true"
+          first
+        />
+        <Item
+          title="Model S"
+          desc="Starting at $69,420"
+          desClick=""
+          backgroundImage={ModelS}
+          leftBtnTxt="CUSTOM ORDER"
+          leftBtnLink=""
+          rightBtnTxt="EXISTING INVENTORY"
+          rightBtnLink=""
+          twoButtons="true"
+        />
+        <Item
+          title="Model 3"
+          desc="Order Online for Touchless Delivery"
+          desClick=""
+          backgroundImage={Model3}
+          leftBtnTxt="CUSTOM ORDER"
+          leftBtnLink=""
+          rightBtnTxt="EXISTING INVENTORY"
+          rightBtnLink=""
+          twoButtons="true"
+        />
+        <Item
+          title="Model X"
+          desc="Order Online for Touchless Delivery"
+          desClick=""
+          backgroundImage={ModelX}
+          leftBtnTxt="CUSTOM ORDER"
+          leftBtnLink=""
+          rightBtnTxt="EXISTING INVENTORY"
+          rightBtnLink=""
+          twoButtons="true"
+        />
+        <Item
+          title="Model Y"
+          desc="Order Online for Touchless Delivery"
+          desClick=""
+          backgroundImage={ModelY}
+          leftBtnTxt="CUSTOM ORDER"
+          leftBtnLink=""
+          rightBtnTxt="EXISTING INVENTORY"
+          rightBtnLink=""
+          twoButtons="true"
+        />
+        <Item
+          title="Solar for New Roofs"
+          desc="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
+          desClick=""
+          backgroundImage={SolarRoof}
+          leftBtnTxt="ORDER NOW"
+          leftBtnLink=""
+          rightBtnTxt="LEARN MORE"
+          rightBtnLink=""
+          twoButtons="true"
+        />
+        <Item
+          title="Accessories"
+          desc=""
+          desClick=""
+          backgroundImage={Accessories}
+          leftBtnTxt="SHOP NOW"
+          leftBtnLink=""
+          rightBtnTxt="LEARN MORE"
+          rightBtnLink=""
+        />
+      </div>
     </div>
   );
 }
